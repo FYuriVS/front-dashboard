@@ -1,0 +1,41 @@
+<div class="container">
+  <section>
+    <div class="cards">
+      <app-card-gradient
+        [title]="'Número total de clientes cadastrados.'"
+        [icon]="'pi pi-user'"
+      ></app-card-gradient>
+      <app-card-gradient
+        [title]="'Total de vendas mensais.'"
+        [icon]="'pi pi-calendar-minus'"
+      ></app-card-gradient>
+      <app-card-gradient
+        [title]="'Saldo Mensal.'"
+        [icon]="'pi pi-dollar'"
+      ></app-card-gradient>
+    </div>
+    <p-chart
+      type="bar"
+      [data]="basicData"
+      [options]="basicOptions"
+      width="500"
+      height="250"
+      [responsive]="true"
+    ></p-chart>
+  </section>
+  <div class="transactions">
+    <div class="header-transactions">
+      <span>Atividades recentes</span>
+    </div>
+    <app-card-transaction></app-card-transaction>
+    <app-card-transaction></app-card-transaction>
+    <app-card-transaction></app-card-transaction>
+    <app-card-transaction></app-card-transaction>
+    <app-card-transaction></app-card-transaction>
+    <app-card-transaction></app-card-transaction>
+    <app-card-transaction></app-card-transaction>
+    <app-card-transaction></app-card-transaction>
+    <app-card-transaction></app-card-transaction>
+    <app-card-transaction></app-card-transaction>
+  </div>
+</div>

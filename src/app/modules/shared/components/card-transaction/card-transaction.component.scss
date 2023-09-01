@@ -1,0 +1,36 @@
+.card-transaction {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.5rem;
+  i {
+    font-size: 3rem;
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #272935;
+  border-radius: 1rem;
+  width: 40%;
+  color: #6d748d;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #6d748d;
+
+  span {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin: 0;
+  }
+}
